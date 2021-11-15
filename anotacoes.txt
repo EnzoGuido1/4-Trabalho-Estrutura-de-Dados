@@ -1,0 +1,14 @@
+no arquivo .via, na função 'e' que insere arestas eu devo primeiramente dar CALLOC_ARESTA_DATA em um void*, atribuir os valores
+passados no .via e definir como -1 o destino da aresta (setArestaDestino(aresta_data, -1)), desse jeito eu tenho uma aresta com
+todos os dados passados e com nenhum destino por enquanto, depois chamo a função insere_Aresta, nessa função eu acho o vertice 1
+e o vertice 2, caso ambos existam eu insiro na lista de arestas do vertice 1 os dados da aresta passado no argumento, mudando
+antes o destino da aresta para a posição (int index) do vertice 2 no vetor de vertices, portanto teremos no final dessa função
+a aresta inserida na lista de arestas em v1 com seus próprios dados e um int destino_da_aresta com o index da posição de v2 no
+vetor.
+
+S-B
+B-H
+S-C
+C-L
+H-G
+B-D
